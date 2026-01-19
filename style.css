@@ -526,3 +526,92 @@ footer > p {
   visibility: visible !important;
   transform: translateY(0) !important;
 }
+/* ================== GLOBAL RESPONSIVE FIX ================== */
+* {
+  max-width: 100%;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Images & videos never overflow */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================== FLEX & GRID SAFE STACKING ================== */
+@media (max-width: 1024px) {
+
+  .home-about,
+  .home-adventure,
+  .about-content,
+  .contact-section {
+    flex-wrap: wrap;
+  }
+
+  .activity-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================== MOBILE FIX ================== */
+@media (max-width: 768px) {
+
+  /* Stack layouts vertically */
+  .home-about,
+  .home-adventure,
+  .about-content,
+  .contact-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Navbar safe wrap */
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Images scale properly */
+  .home-about img,
+  .home-adventure img,
+  .activity-gallery img,
+  .activity-gallery video {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  /* Hero text scaling */
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+}
+
+/* ================== SMALL MOBILE ================== */
+@media (max-width: 480px) {
+
+  .hero-overlay h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 2.5rem 1rem;
+  }
+}
+
