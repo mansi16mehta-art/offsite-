@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Offsite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Offsite</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="#">Activities</a>
+        <ul class="dropdown-menu">
+          <li><a href="bungeejumping.html">Bungee Jumping</a></li>
+          <li><a href="camping.html">Camping</a></li>
+          <li><a href="hotairballoons.html">Hot Air Balloon</a></li>
+          <li><a href="paintball.html">Paintball</a></li>
+          <li><a href="paragliding.html">Paragliding</a></li>
+          <li><a href="rafting.html">Rafting</a></li>
+          <li><a href="rockclimbing.html">Rock Climbing</a></li>
+          <li><a href="safari.html">Safari</a></li>
+          <li><a href="scubadiving.html">Scuba Diving</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="contact-form">
+    <h2>Get in Touch</h2>
+    <form id="contactForm" action="/contact" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Phone Number">
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMessage" style="margin-top:10px;"></p>
+    </form>
+  </div>
+
+  <div class="contact-info">
+    <h3>Contact Details</h3>
+    <p><strong>Office:</strong> Offsite Adventures</p>
+    <p><strong>Phone:</strong> +91-99907 13125</p>
+    <p><strong>Email:</strong> rishi@offsites.in</p>
+    <p><strong>Hours:</strong> Mon–Fri 9am–5pm</p>
+    
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <h3>Let’s Plan Your Next Offsite</h3>
+  <p>Email us or call to customize your adventure</p>
+  <p>&copy; 2026 Offsite Adventures</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
